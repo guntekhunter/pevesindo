@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -7,7 +8,13 @@ export default function Navbar() {
         <div className="container mx-auto flex justify-between items-center text-[.6rem]">
           <div className="space-x-4">
             <a href="#" className=" text-lg font-semibold">
-              Pevesindo
+              <Image
+                src="/logo white.png"
+                alt=""
+                width={500}
+                height={500}
+                className="w-[5rem]"
+              ></Image>
             </a>
           </div>
 

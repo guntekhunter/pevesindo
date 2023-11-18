@@ -22,11 +22,11 @@ export default function Home() {
                 Pevesindo Store, Harga Grosir, Distributor Plafon PVC Dan Panel
                 Dinding PVC Berkualitas Di Indonesia.
               </h2>
-              <div className=" flex justify-between w-[20rem]">
-                <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850]">
+              <div className="flex w-[20rem] space-x-[1rem]">
+                <button className="bg-primary text-bwhite text-[.8rem] py-2 px-4 rounded hover:bg-[#D8A850]">
                   Get Started
                 </button>
-                <button className="bg-white text-black py-2 px-4 rounded hover:bg-primary">
+                <button className="bg-white text-black py-2 text-[.8rem] px-4 rounded hover:bg-primary">
                   Get Started
                 </button>
               </div>
@@ -281,9 +281,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full bg-red-200 flex flex justify-around py-[5rem]">
+        <section className="w-full flex flex justify-around py-[5rem]">
           <div className="flex justify-between w-[80%] justify-between space-x-[2rem]">
-            <div className="bg-yellow-200 w-[50%]">
+            <div className="w-[50%]">
               <Header className="text-black">Menjadi Mitra Kami</Header>
               <Descriptions className="text-black">
                 Pevesindo Berkomitmen Membantu Pelanggan Agar Mendapatkan Produk
@@ -291,19 +291,62 @@ export default function Home() {
                 dan Berkualitas.
               </Descriptions>
             </div>
-            <div className="bg-yellow-200 w-[50%] block">
+            <div className="w-[50%] block space-y-2">
               <p className="text-[1rem]">Nama</p>
               <div className="w-full flex justify-between space-x-[1rem]">
-                <div className="inline-block w-full">
-                  <p className="text-[.8rem]">First Name (required)</p>
+                <div className="inline-block w-full space-y-[.3rem]">
+                  <p className="text-[.8rem]">Nama Depan (required)</p>
                   <Input />
                 </div>
-                <div className="inline-block w-full">
-                  <p className="text-[.8rem]">Last Name (required)</p>
+                <div className="inline-block w-full space-y-[.3rem]">
+                  <p className="text-[.8rem]">Nama Nama Belakang (required)</p>
                   <Input />
                 </div>
               </div>
+              <div className="inline-block w-full space-y-[.3rem]">
+                <p className="text-[.8rem]">Email (required)</p>
+                <Input />
+              </div>
+              <div className="inline-block w-full space-y-[.3rem]">
+                <p className="text-[.8rem]">Pesan (required)</p>
+                <textarea
+                  name=""
+                  id=""
+                  className="w-full h-[2rem] px-[.5rem] h-[5rem] bg-gray-200 rounded-md"
+                />
+              </div>
+              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
+                Kirim
+              </button>
             </div>
+          </div>
+        </section>
+        <section className="w-full flex justify-around">
+          <div className="w-[80%] py-[5rem] space-y-[1.5rem]">
+            <Header className="text-black text-center">
+              Kalkulator Jumlah Bahan
+            </Header>
+            <div className="w-full flex justify-between space-x-[1rem] space-x-[1rem]">
+              <div className="inline-block w-full space-y-[.3rem]">
+                <p className="text-[.8rem]">Pilih Produk</p>
+                <Input />
+              </div>
+              <div className="inline-block w-full space-y-[.3rem]">
+                <p className="text-[.8rem]">Masukkan Ukuran</p>
+                <Input />
+              </div>
+            </div>
+            <div className="w-full bg-green-200">
+              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] w-full">
+                Cek Harga
+              </button>
+            </div>
+            <div className="border-b-[1.5px] text-center">Rp 2.000.000</div>
+            {/* <div className="w-full bg-green-200">
+              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] w-full">
+                Hubungi Kami
+              </button>
+            </div> */}
           </div>
         </section>
       </div>
