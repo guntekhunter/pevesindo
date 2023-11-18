@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./component/Header";
 import Descriptions from "./component/Descriptions";
+import Input from "./component/Input";
 
 export default function Home() {
   return (
@@ -277,6 +278,31 @@ export default function Home() {
               <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
                 Konsultasi
               </button>
+            </div>
+          </div>
+        </section>
+        <section className="w-full bg-red-200 flex flex justify-around py-[5rem]">
+          <div className="flex justify-between w-[80%] justify-between space-x-[2rem]">
+            <div className="bg-yellow-200 w-[50%]">
+              <Header className="text-black">Menjadi Mitra Kami</Header>
+              <Descriptions className="text-black">
+                Pevesindo Berkomitmen Membantu Pelanggan Agar Mendapatkan Produk
+                PVC Seperti Plafon PVC, Panel Dinding PVC yang Terbaik, Bermutu
+                dan Berkualitas.
+              </Descriptions>
+            </div>
+            <div className="bg-yellow-200 w-[50%] block">
+              <p className="text-[1rem]">Nama</p>
+              <div className="w-full flex justify-between space-x-[1rem]">
+                <div className="inline-block w-full">
+                  <p className="text-[.8rem]">First Name (required)</p>
+                  <Input />
+                </div>
+                <div className="inline-block w-full">
+                  <p className="text-[.8rem]">Last Name (required)</p>
+                  <Input />
+                </div>
+              </div>
             </div>
           </div>
         </section>
