@@ -1,113 +1,286 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Header from "./component/header";
+import Descriptions from "./component/Descriptions";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="flex justify-around relative">
+      <div
+        className="bg-cover bg-right h-[80vh] w-full"
+        style={{ backgroundImage: 'url("/pictures.jpg")' }}
+      >
+        <div className="bg-gradient-to-r from-[#464444] from-[30%] to-transparent absolute inset-0 w-full" />
+        <div className="py-[7rem] w-[80%] relative z-10 px-[8rem] flex align-center">
+          <div className="container mx-auto flex items-center justify-between text-white">
+            <div className="w-[70%]">
+              <h1 className="text-[1.5rem] font-bold mb-4">
+                Pevesindo Store, Harga Grosir, Distributor Plafon PVC Dan Panel
+                Dinding PVC Berkualitas Di Indonesia.
+              </h1>
+              <h2 className="text-[1rem] mb-6">
+                Pevesindo Store, Harga Grosir, Distributor Plafon PVC Dan Panel
+                Dinding PVC Berkualitas Di Indonesia.
+              </h2>
+              <div className=" flex justify-between w-[20rem]">
+                <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850]">
+                  Get Started
+                </button>
+                <button className="bg-white text-black py-2 px-4 rounded hover:bg-primary">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="absolute top-[25rem] w-full flex justify-around">
+          <div className="w-[80%] flex justify-between">
+            <div className="bg-white w-[30%] flex justify-around items-center p-[2rem] rounded-md shadow-xl">
+              <div className="flex-col space-y-[1rem]">
+                <div className="flex justify-around">
+                  <Image
+                    src="/discount.png"
+                    alt={""}
+                    width={500}
+                    height={500}
+                    className="w-[2rem]"
+                  />
+                </div>
+                <div className="text-center space-y-[1rem]">
+                  <h3 className="text-[1rem] font-bold">Harga Terjangkau</h3>
+                  <h4 className="text-[.8rem]">
+                    Produk Plafon dan Panel Dinding PVC Premium Dengan Harga
+                    Sangat Terjangkau. Sehingga Anda Dapat Hemat Anggaran Biaya
+                    Untuk Keperluan yang Lainnya.
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white w-[30%] flex justify-around items-center p-[2rem] rounded-md shadow-xl">
+              <div className="flex-col space-y-[1rem]">
+                <div className="flex justify-around">
+                  <Image
+                    src="/thumb-up.png"
+                    alt={""}
+                    width={500}
+                    height={500}
+                    className="w-[2rem]"
+                  />
+                </div>
+                <div className="text-center space-y-[1rem]">
+                  <h3 className="text-[1rem] font-bold">Kualitas Eksport</h3>
+                  <h4 className="text-[.8rem]">
+                    Asli Buatan Indonesia, Hanya Terbuat Dari Bahan Poly Vinyl
+                    Chloride Pilihan. Produk Berkualitas, Aman Bagi Kesehatan,
+                    Standarisasi Nasional Dan Internasional.
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white w-[30%] flex justify-around items-center p-[2rem] rounded-md shadow-xl">
+              <div className="flex-col space-y-[1rem]">
+                <div className="flex justify-around">
+                  <Image
+                    src="/discount.png"
+                    alt={""}
+                    width={500}
+                    height={500}
+                    className="w-[2rem]"
+                  />
+                </div>
+                <div className="text-center space-y-[1rem]">
+                  <h3 className="text-[1rem] font-bold">Ekstra Kuat</h3>
+                  <h4 className="text-[.8rem]">
+                    Produk Plafon dan Panel Dinding Dari Natapon PVC Adalah Yang
+                    Terbaik Di Indonesia. Bahannya Ringan, Elastis, Kuat Serta
+                    Mampu Bertahan Belasan Tahun Tanpa Perlu Diganti.
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-[10rem] flex justify-center py-[5rem]">
+          <div className="w-[80%] text-center space-y-[2rem]">
+            <Header className="text-black">Layanan Pevesindo</Header>
+            <div className="w-full flex justify-around">
+              <p className="text-[1rem] w-[80%]">
+                Pevesindo Berkomitmen Membantu Pelanggan Agar Mendapatkan Produk
+                PVC Seperti Plafon PVC, Panel Dinding PVC yang Terbaik, Bermutu
+                dan Berkualitas.
+              </p>
+            </div>
+            <div className="w-full flex justify-between">
+              <div className="bg-white w-[30%] flex justify-around py-[2rem] rounded-md shadow-xl">
+                <div className="flex-col space-y-[1rem]">
+                  <div className="space-y-[1rem]">
+                    <h3 className="text-[.8rem] font-bold text-center ">
+                      RETAIL
+                    </h3>
+                    <Image width={500} height={500} src="/1.jpg" alt="" />
+                    <h4 className="text-[.8rem] px-[1rem] text-left">
+                      Pevesindo Adalah Distributor Resmi Produk Dari Natapon
+                      PVC. Kami Melayani Penjualan Retail, Grosir dan Kebutuhan
+                      Khusus.
+                    </h4>
+                    <div className="flex px-[1rem] flex space-x-[1rem] w-full justify-beween">
+                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                        Pesan
+                      </button>
+                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                        Harga
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white w-[30%] flex justify-around items-center py-[2rem] rounded-md shadow-xl">
+                <div className="flex-col space-y-[1rem]">
+                  <div className="space-y-[1rem]">
+                    <h3 className="text-[.8rem] font-bold text-center ">
+                      PEMASANGAN
+                    </h3>
+                    <Image width={500} height={500} src="/1.jpg" alt="" />
+                    <h4 className="text-[.8rem] px-[1rem] text-left">
+                      Pevesindo Juga Meyediakan Layanan Jasa Pemasangan Plafon
+                      dan Panel Dinding PVC Terpercaya, Berpengalaman &
+                      Bergaransi.
+                    </h4>
+                    <div className="flex px-[1rem] flex space-x-[1rem] w-full justify-beween">
+                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                        Pesan
+                      </button>
+                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                        Harga
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white w-[30%] flex justify-around items-center py-[2rem] rounded-md shadow-xl">
+                <div className="flex-col space-y-[1rem]">
+                  <div className="space-y-[1rem] overflow-hidden">
+                    <h3 className="text-[.8rem] font-bold text-center">
+                      PENYEDIAAN
+                    </h3>
+                    <Image width={500} height={500} src="/1.jpg" alt="" />
+                    <h4 className="text-[.8rem] px-[1rem] text-left">
+                      Pevesindo Juga Peyediaan Plafon dan Panel Dinding PVC
+                      Terpercaya Untuk Para Mitra Agen, Toko, Developer,
+                      Kontraktor Sipil, dll.
+                    </h4>
+                    <div className="flex px-[1rem] flex space-x-[1rem] w-full justify-beween">
+                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                        Pesan
+                      </button>
+                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                        Harga
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section
+          className="bg-cover bg-right h-[60vh] w-full relative flex justify-around"
+          style={{ backgroundImage: 'url("/pictures.jpg")' }}
+        >
+          <div className="absolute inset-0 bg-gray-800 bg-opacity-80 z-0"></div>
+          <div className="w-[60%] z-10 flex justify-around h-full items-center">
+            <div className="text-center space-y-[.5rem]">
+              <Header className="text-white text-[2.5rem] leading-[2.5rem]">
+                Semua Layanan PVC Bisa Anda Dapatkan Dalam Satu Atap.
+              </Header>
+              <Descriptions className="text-white text-[.9rem]">
+                Pevesindo Berkomitmen Membantu Pelanggan Agar Mendapatkan Produk
+                PVC Seperti Plafon PVC, Panel Dinding PVC yang Terbaik, Bermutu
+                dan Berkualitas.
+              </Descriptions>
+              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
+                Konsultasi
+              </button>
+            </div>
+          </div>
+        </section>
+        <section className="w-full flex justify-center py-[5rem]">
+          <div className="w-[80%] flex space-x-[5rem]">
+            <div className="w-[50%] space-y-[2rem]">
+              <Header className="text-[1rem]">
+                Semua Layanan PVC Bisa Anda Dapatkan Dalam Satu Atap.
+              </Header>
+              <Descriptions className="text-black text-[.9rem]">
+                Pevesindo Berkomitmen Membantu Pelanggan Agar Mendapatkan Produk
+                PVC Seperti Plafon PVC, Panel Dinding PVC yang Terbaik, Bermutu
+                dan Berkualitas.
+              </Descriptions>
+              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
+                Konsultasi
+              </button>
+            </div>
+            <div className="bg-red-200 w-[50%]">
+              <Image src="/1.jpg" alt={""} width={500} height={500}></Image>
+            </div>
+          </div>
+        </section>
+        <section className="w-full flex justify-center py-[5rem]">
+          <div className="w-[80%] flex space-x-[5rem]">
+            <div className="w-[50%] space-y-[2rem]">
+              <Header className="text-[1rem]">
+                Semua Layanan PVC Bisa Anda Dapatkan Dalam Satu Atap.
+              </Header>
+              <Descriptions className="text-black text-[.9rem]">
+                Pevesindo Berkomitmen Membantu Pelanggan Agar Mendapatkan Produk
+                PVC Seperti Plafon PVC, Panel Dinding PVC yang Terbaik, Bermutu
+                dan Berkualitas.
+              </Descriptions>
+              <div className="flex items-center space-x-[1rem]">
+                <div className="w-[2rem] rounded-full bg-primary h-[2rem]" />
+                <h3 className="text-[1rem] font-bold">Ekstra Kuat</h3>
+              </div>
+              <div className="flex items-center space-x-[1rem]">
+                <div className="w-[2rem] rounded-full bg-primary h-[2rem]" />
+                <h3 className="text-[1rem] font-bold">Ekstra Kuat</h3>
+              </div>
+              <div className="flex items-center space-x-[1rem]">
+                <div className="w-[2rem] rounded-full bg-primary h-[2rem]" />
+                <h3 className="text-[1rem] font-bold">Ekstra Kuat</h3>
+              </div>
+              <div className="flex items-center space-x-[1rem]">
+                <div className="w-[2rem] rounded-full bg-primary h-[2rem]" />
+                <h3 className="text-[1rem] font-bold">Ekstra Kuat</h3>
+              </div>
+              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
+                Konsultasi
+              </button>
+            </div>
+            <div className="bg-red-200 w-[50%]">
+              <Image src="/1.jpg" alt={""} width={500} height={500}></Image>
+            </div>
+          </div>
+        </section>
+        <section
+          className="bg-cover bg-right h-[60vh] w-full relative flex justify-around"
+          style={{ backgroundImage: 'url("/pictures.jpg")' }}
+        >
+          <div className="absolute inset-0 bg-gray-800 bg-opacity-80 z-0"></div>
+          <div className="w-[60%] z-10 flex justify-around h-full items-center">
+            <div className="text-center space-y-[.5rem]">
+              <Header className="text-white text-[2.5rem] leading-[2.5rem]">
+                Distributor Plafon PVC
+              </Header>
+              <Descriptions className="text-white text-[.9rem]">
+                Pevesindo Berkomitmen Membantu Pelanggan Agar Mendapatkan Produk
+                PVC Seperti Plafon PVC, Panel Dinding PVC yang Terbaik, Bermutu
+                dan Berkualitas.
+              </Descriptions>
+              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
+                Konsultasi
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }
