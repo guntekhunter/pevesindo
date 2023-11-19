@@ -5,22 +5,24 @@ import Input from "./component/Input";
 
 export default function Home() {
   return (
-    <div className="flex justify-around relative">
-      <div
-        className="bg-cover bg-right h-[80vh] w-full"
-        style={{ backgroundImage: 'url("/pictures.jpg")' }}
-      >
-        <div className="bg-gradient-to-r from-[#464444] from-[30%] to-transparent absolute inset-0 w-full" />
-        <div className="py-[7rem] w-[80%] relative z-10 px-[8rem] flex align-center">
-          <div className="container mx-auto flex items-center justify-between text-white">
-            <div className="w-[70%]">
-              <h1 className="text-[1.5rem] font-bold mb-4">
-                Pevesindo Store, Harga Grosir, Distributor Plafon PVC Dan Panel
-                Dinding PVC Berkualitas Di Indonesia.
+    <div className="flex justify-around ">
+      <div>
+        <div
+          className="bg-cover bg-right h-[90vh] w-full relative"
+          style={{ backgroundImage: 'url("/hero.jpg")' }}
+        >
+          <div className="bg-gradient-to-r from-[#464444] from-[30%] to-transparent absolute inset-0 w-full z-0" />
+          <div className="container mx-auto flex items-center justify-between text-white h-full w-[80%] z-10">
+            <div className="w-[70%] z-10">
+              <h1 className="text-[2rem] font-bold mb-4 w-[40rem]">
+                Distributor Plafon Dan Panel Dinding PVC Berkualitas Di
+                Indonesia.
               </h1>
-              <h2 className="text-[1rem] mb-6">
-                Pevesindo Store, Harga Grosir, Distributor Plafon PVC Dan Panel
-                Dinding PVC Berkualitas Di Indonesia.
+              <h2 className="text-[.8rem] mb-6 w-[30rem]">
+                PEVESINDO Merupakan Perusahan, Pabrik Dan Distributor Penyedia
+                Papan Plafon PVC Berkualitas Tinggi Dengan Harga Terjangkau.
+                Cocok Bagi Pemilik Rumah, Para Pengembang atau Kontraktor
+                Proyek. Kunjungi Cabang Kami Terdekat.
               </h2>
               <div className="flex w-[20rem] space-x-[1rem]">
                 <button className="bg-primary text-bwhite text-[.8rem] py-2 px-4 rounded hover:bg-[#D8A850]">
@@ -33,7 +35,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute top-[25rem] w-full flex justify-around">
+        <div className="absolute top-[80vh] w-full flex justify-around">
           <div className="w-[80%] flex justify-between">
             <div className="bg-white w-[30%] flex justify-around items-center p-[2rem] rounded-md shadow-xl">
               <div className="flex-col space-y-[1rem]">
@@ -114,7 +116,7 @@ export default function Home() {
               <div className="bg-white w-[30%] flex justify-around py-[2rem] rounded-md shadow-xl">
                 <div className="flex-col space-y-[1rem]">
                   <div className="space-y-[1rem]">
-                    <h3 className="text-[.8rem] font-bold text-center ">
+                    <h3 className="text-[.8rem] font-bold text-center">
                       RETAIL
                     </h3>
                     <Image width={500} height={500} src="/1.jpg" alt="" />
@@ -124,10 +126,10 @@ export default function Home() {
                       Khusus.
                     </h4>
                     <div className="flex px-[1rem] flex space-x-[1rem] w-full justify-beween">
-                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                      <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
                         Pesan
                       </button>
-                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                      <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
                         Harga
                       </button>
                     </div>
@@ -147,10 +149,10 @@ export default function Home() {
                       Bergaransi.
                     </h4>
                     <div className="flex px-[1rem] flex space-x-[1rem] w-full justify-beween">
-                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                      <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
                         Pesan
                       </button>
-                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                      <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
                         Harga
                       </button>
                     </div>
@@ -170,10 +172,10 @@ export default function Home() {
                       Kontraktor Sipil, dll.
                     </h4>
                     <div className="flex px-[1rem] flex space-x-[1rem] w-full justify-beween">
-                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                      <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
                         Pesan
                       </button>
-                      <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
+                      <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] font-bold w-full">
                         Harga
                       </button>
                     </div>
@@ -198,7 +200,7 @@ export default function Home() {
                 PVC Seperti Plafon PVC, Panel Dinding PVC yang Terbaik, Bermutu
                 dan Berkualitas.
               </Descriptions>
-              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
+              <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
                 Konsultasi
               </button>
             </div>
@@ -215,7 +217,7 @@ export default function Home() {
                 PVC Seperti Plafon PVC, Panel Dinding PVC yang Terbaik, Bermutu
                 dan Berkualitas.
               </Descriptions>
-              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
+              <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
                 Konsultasi
               </button>
             </div>
@@ -251,7 +253,7 @@ export default function Home() {
                 <div className="w-[2rem] rounded-full bg-primary h-[2rem]" />
                 <h3 className="text-[1rem] font-bold">Ekstra Kuat</h3>
               </div>
-              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
+              <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
                 Konsultasi
               </button>
             </div>
@@ -275,7 +277,7 @@ export default function Home() {
                 PVC Seperti Plafon PVC, Panel Dinding PVC yang Terbaik, Bermutu
                 dan Berkualitas.
               </Descriptions>
-              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
+              <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
                 Konsultasi
               </button>
             </div>
@@ -315,7 +317,7 @@ export default function Home() {
                   className="w-full h-[2rem] px-[.5rem] h-[5rem] bg-gray-200 rounded-md"
                 />
               </div>
-              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
+              <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem]">
                 Kirim
               </button>
             </div>
@@ -337,13 +339,13 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full bg-green-200">
-              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] w-full">
+              <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] w-full">
                 Cek Harga
               </button>
             </div>
             <div className="border-b-[1.5px] text-center">Rp 2.000.000</div>
             {/* <div className="w-full bg-green-200">
-              <button className="bg-primary text-black py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] w-full">
+              <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] w-full">
                 Hubungi Kami
               </button>
             </div> */}
