@@ -102,11 +102,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-[10rem] flex justify-center py-[5rem]">
+        <div className="mt-[12rem] flex justify-center py-[5rem]">
           <div className="w-[80%] text-center space-y-[2rem]">
             <Header className="text-black">Layanan Pevesindo</Header>
             <div className="w-full flex justify-around">
-              <p className="text-[1rem] w-[80%]">
+              <p className="w-[80%] text-[.8rem]">
                 Pevesindo Berkomitmen Membantu Pelanggan Agar Mendapatkan Produk
                 PVC Seperti Plafon PVC, Panel Dinding PVC yang Terbaik, Bermutu
                 dan Berkualitas.
