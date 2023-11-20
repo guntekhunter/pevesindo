@@ -1,11 +1,14 @@
+"use client";
 import Image from "next/image";
 import Header from "./component/Header";
 import Descriptions from "./component/Descriptions";
 import Input from "./component/Input";
+import { useEffect, useRef, useState } from "react";
+import PreviewSection from "./component/landing page/PreviewSection";
 
 export default function Home() {
   return (
-    <div className="flex justify-around ">
+    <div className="flex justify-around overflow-hidden">
       <div>
         <div
           className="bg-cover bg-right h-[90vh] w-full relative"
@@ -221,12 +224,13 @@ export default function Home() {
                 Konsultasi
               </button>
             </div>
-            <div className="bg-red-200 w-[50%]">
+            <div className="w-[50%]">
               <Image src="/1.jpg" alt={""} width={500} height={500}></Image>
             </div>
           </div>
         </section>
-        <section className="w-full flex justify-center py-[5rem]">
+        <PreviewSection />
+        <section className="w-full flex justify-center py-[5rem] ">
           <div className="w-[80%] flex space-x-[5rem]">
             <div className="w-[50%] space-y-[2rem]">
               <Header className="text-[1rem]">
@@ -257,8 +261,14 @@ export default function Home() {
                 Konsultasi
               </button>
             </div>
-            <div className="bg-red-200 w-[50%]">
-              <Image src="/1.jpg" alt={""} width={500} height={500}></Image>
+            <div className="w-[50%]">
+              <Image
+                src="/1.jpg"
+                alt={""}
+                width={500}
+                height={500}
+                className="w-full"
+              ></Image>
             </div>
           </div>
         </section>
@@ -344,11 +354,6 @@ export default function Home() {
               </button>
             </div>
             <div className="border-b-[1.5px] text-center">Rp 2.000.000</div>
-            {/* <div className="w-full bg-green-200">
-              <button className="bg-primary text-white py-2 px-4 rounded hover:bg-[#D8A850] text-[.8rem] w-full">
-                Hubungi Kami
-              </button>
-            </div> */}
           </div>
         </section>
       </div>

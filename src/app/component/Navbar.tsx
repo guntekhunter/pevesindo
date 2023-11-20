@@ -13,7 +13,7 @@ export default function Navbar() {
                 alt=""
                 width={500}
                 height={500}
-                className="w-[5rem]"
+                className="w-[7rem]"
               ></Image>
             </a>
           </div>
